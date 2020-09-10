@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./Components/Header.js"
+import Header from './Components/Header.js';
+import Footer from './Components/Footer.js';
+import Slider from './Components/Slider.js';
+
+const images = [
+  '/images/1.jpg',
+  '/images/2.tif',
+  '/images/3.tif',
+  '/images/4.jpg',
+  '/images/5.jpg',
+  '/images/6.jpg',
+  '/images/7.jpg',
+  '/images/8.jpg',
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div><Header /><Slider slides={images} /><Footer /></div> 
 }
 
 export default App;
