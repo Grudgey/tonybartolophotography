@@ -4,7 +4,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 function Arrow(props) {
     return <div className={props.direction === "left" ? "arrowleft" : "arrowright"} onClick={props.handleClick}>
-        {props.direction === "left" ? <ArrowBackIosIcon /> : <ArrowForwardIosIcon className="arrowright" />}
+        {props.direction === "left" ? <ArrowBackIosIcon style={{ fontSize: 80 }}  /> : <ArrowForwardIosIcon style={{ fontSize: 80 }}  className="arrowright" />}
     </div>
 }
 

@@ -10,7 +10,7 @@ function Slide(props) {
       };
 
     return <div className="slide">
-    <div onClick={toggleOpen} style={{backgroundImage: `url(${props.content})`}} className="slide-bg" />
+    <div onClick={toggleOpen} style={{backgroundImage: `url(${props.content})`}} className="slide" />
     <Modal open={open}
         onClose={toggleOpen}
         aria-labelledby="Image pop-up"
