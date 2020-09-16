@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Container from "react-bootstrap/Container";
 
 
 function Header() {
     return <Navbar variant="dark" expand="lg">
-    <Navbar.Brand href="#home"><h1>TONY BARTOLO PHOTOGRAPHY</h1></Navbar.Brand>
+    <Nav.Item><h1>TONY BARTOLO PHOTOGRAPHY</h1></Nav.Item>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
