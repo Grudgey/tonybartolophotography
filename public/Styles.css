@@ -50,6 +50,12 @@ h1 {
     background-position: center;
   }
 
+@media screen and (max-width: 700px) {
+  .slide {
+    background-size: cover;
+  }
+  }
+
   .arrowleft {
     display: flex;
       position: absolute;
