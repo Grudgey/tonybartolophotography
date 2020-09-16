@@ -8,9 +8,9 @@ function SliderContent(props) {
         height: "100%",
         width: `${props.width}px`,
         display: "flex"
-        
+
         }}
-        
+
    > {props.children} </div>
 }
 

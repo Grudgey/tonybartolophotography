@@ -1,12 +1,6 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavLink from 'react-bootstrap/NavLink';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import NavItem from 'react-bootstrap/NavItem';
-import NavbarBrand from 'react-bootstrap/NavbarBrand';
-import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
-import NavbarToggle from 'react-bootstrap/NavbarToggle';
 
 
 function Header() {
@@ -15,11 +9,7 @@ function Header() {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="#home" >ABOUT</Nav.Link>
-        <Nav.Link href="#link" >CONTACT</Nav.Link>
-        {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Divider />
-        </NavDropdown> */}
+        <Nav.Link href="mailto:tony@snazmusic.com">CONTACT</Nav.Link>
       </Nav>
 
     </Navbar.Collapse>

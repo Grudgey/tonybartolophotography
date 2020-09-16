@@ -28,7 +28,7 @@ function Slider(props) {
             activeIndex: 0
           })
         }
-    
+
         setState({
           ...state,
           activeIndex:   activeIndex + 1,
@@ -45,7 +45,7 @@ function Slider(props) {
             activeIndex: props.slides.length - 1
           })
         }
-    
+        
         setState({
           ...state,
           activeIndex: activeIndex - 1,
@@ -54,17 +54,17 @@ function Slider(props) {
       }
 
     return <div className="slider">
-    <SliderContent translate={translate}
-        transition={transition}
-        width={getWidth() * props.slides.length}>
+          <SliderContent translate={translate}
+transition={transition}
+width={getWidth() * props.slides.length}>
 
-          {props.slides.map((slide, i) => (
-            <Slide key={slide + i} content={slide} />
-          ))} 
+{props.slides.map((slide, i) => (
+  <Slide key={slide + i} content={slide} width={getWidth()}/>
+))}
 
-        </SliderContent>
-        <Arrow direction="left" handleClick={prevImage}/>
-        <Arrow direction="right" handleClick={nextImage}/> 
+</SliderContent>
+<Arrow direction="left" handleClick={prevImage}/>
+<Arrow direction="right" handleClick={nextImage}/>
         </div>
 }
 
