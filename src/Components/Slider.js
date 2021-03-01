@@ -17,7 +17,6 @@ function Slider(props) {
   const { translate, transition, activeIndex } = state;
 
   function nextImage() {
-    console.log("next");
     if (activeIndex === props.slides.length - 1) {
       return setState({
         ...state,

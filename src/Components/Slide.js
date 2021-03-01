@@ -15,9 +15,10 @@ function Slide(props) {
         onClose={toggleOpen}
         aria-labelledby="Image pop-up"
         aria-describedby="Image description">
-        <div onClick={toggleOpen} className="image-modal">
+            <div onClick={(toggleOpen)} className={`image-modal ${open ? "active" : ""}`}>
             <img  src={props.content} alt={props.content}/>
         </div>
+
         </Modal>
 </div>
 
